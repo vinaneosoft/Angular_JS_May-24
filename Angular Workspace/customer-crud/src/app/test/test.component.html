@@ -1,0 +1,7 @@
+<h3>Template Reference Variables</h3>
+<p>Unique Variables applied to any DOM node to access it at model side</p>
+<input type="number" placeholder="Enter customer age" #namefield>
+<button class="btn btn-primary" type="button" (click)="pass(namefield)">SEND</button>
+<p #mypara (mouseover)="pass2(mypara)">
+    HI
+</p>
