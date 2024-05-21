@@ -25,4 +25,21 @@ export class TestComponent {
     imgHeight:400,
     imgWidth:600
   }
+  
+  fieldType="password";
+  fieldMessage="Enter your password";
+
+  showPass(checked:boolean){
+    console.log(checked);
+    if(checked)
+      this.fieldType="text"
+    else
+      this.fieldType="password"
+  }
+
+  checkBox=false;
+  test(){
+   console.log(this.checkBox);
+   
+  }
 }

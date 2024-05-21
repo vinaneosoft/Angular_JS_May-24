@@ -10,3 +10,6 @@
 <img title="Sun images" [src]="imgObject.source" [alt]="imgObject.altMessage" [height]="imgObject.imgHeight" [width]="imgObject.imgWidth"> 
 
 <p>Create Pass world filed using attribute binding</p>
+<input [type]="fieldType" [placeholder]="fieldMessage">
+<input type="checkbox" id="showp" #checkNode (change)="showPass(checkNode.checked)"><label for="showp">Show password</label>
+<input type="checkbox" id="showp2" [(ngModel)]="checkBox" (change)="test()" ><label for="showp2">Show password</label>
