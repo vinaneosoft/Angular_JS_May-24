@@ -1,7 +1,12 @@
 <h3>Template Reference Variables</h3>
-<p>Unique Variables applied to any DOM node to access it at model side</p>
+<p>Unique Variables applied to any DOM node to access it at model side : #</p>
 <input type="number" placeholder="Enter customer age" #namefield>
 <button class="btn btn-primary" type="button" (click)="pass(namefield)">SEND</button>
 <p #mypara (mouseover)="pass2(mypara)">
     HI
 </p>
+<h3>Attribute Binding</h3>
+<p> putting data in attribute from ts side (any script variable) : []</p>
+<img [src]="imgObject.source" [alt]="imgObject.altMessage" [height]="imgObject.imgHeight" [width]="imgObject.imgWidth"> 
+
+<p>Create Pass world filed using attribute binding</p>

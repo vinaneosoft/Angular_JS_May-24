@@ -18,4 +18,11 @@ export class TestComponent {
     console.log(field);
     console.log(field.textContent);
   }
+
+  imgObject={
+    source:"https://th.bing.com/th/id/R.4c929260bd46bc163cf85a380c983264?rik=u6y4c40Voz2i7g&riu=http%3a%2f%2fhdqwalls.com%2fwallpapers%2fbig-sun-sunset-water-body-4k-sm.jpg&ehk=hfukJHh9FIkFtPXzGKsGUdOyf5R%2fG39NcbBNOTvZfkU%3d&risl=&pid=ImgRaw&r=0",
+    altMessage:"SUN SET",
+    imgHeight:400,
+    imgWidth:600
+  }
 }
