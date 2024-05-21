@@ -1,5 +1,6 @@
 
 <header class="myHeader">
-    <h2 class="text-success">CUSTOMER CRUD OPERATIONS</h2>
+    <h2 class="text-success">{{subHeading}}</h2> <!-- data is binded on template-->
+    <input type="text" class="form-control" placeholder="add heading" [(ngModel)]="subHeading" (keyup)="modelTest()">
     <app-navbar></app-navbar>
 </header>
