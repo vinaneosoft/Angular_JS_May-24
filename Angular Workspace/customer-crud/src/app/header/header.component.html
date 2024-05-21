@@ -1,6 +1,7 @@
 
 <header class="myHeader">
     <h2 class="text-success">{{subHeading}}</h2> <!-- data is binded on template-->
-    <input type="text" class="form-control" placeholder="add heading" [(ngModel)]="subHeading" (keyup)="modelTest()">
+    <input type="text" class="form-control" placeholder="add heading" [(ngModel)]="subHeading" (keyup)="modelTest($event)">
+    <button type="button" class="btn btn-primary" (click)="changeHeading($event)">CLICK</button>
     <app-navbar></app-navbar>
 </header>

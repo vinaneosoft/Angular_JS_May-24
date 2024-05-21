@@ -14,8 +14,16 @@ export class HeaderComponent {
       this.subHeading="ADD UPDATE DELETE GET CUSTOMERS" // model updates
     }, 5000);
   }
-  modelTest(){
+  modelTest(ev:KeyboardEvent){
     console.log(this.subHeading);
+    console.log(ev instanceof KeyboardEvent);
+    
+  }
+  changeHeading(ev:MouseEvent){
+    console.log(ev instanceof PointerEvent);
+    
+    this.subHeading="CUSTOMERS"
+    console.log(ev);
     
   }
 }
