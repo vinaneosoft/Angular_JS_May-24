@@ -13,3 +13,31 @@
 <input [type]="fieldType" [placeholder]="fieldMessage">
 <input type="checkbox" id="showp" #checkNode (change)="showPass(checkNode.checked)"><label for="showp">Show password</label>
 <input type="checkbox" id="showp2" [(ngModel)]="checkBox" (change)="test()" ><label for="showp2">Show password</label>
+
+<div>
+    <h3>*ngIf directive</h3>
+    <label for="age">Enter your age:</label>
+    <input id="age" type="number" [(ngModel)]="voterAge">
+    <p *ngIf="voterAge>=18"> <!-- if true the p added else p removed-->
+        Welcome!!!!! You are allowed for voting
+    </p> 
+    <p *ngIf="voterAge<18"> <!-- if true the p added else p removed-->
+        Sorry!!!!! You are not allowed for voting
+    </p>
+</div>
+<div>
+    <h3>*ngIf else directive</h3>
+    <label for="age">Enter your age:</label>
+    <input id="age" type="number" [(ngModel)]="voterAge">
+    <p *ngIf="voterAge>=18;else elsepart"> <!-- if true the p added else p removed-->
+        Welcome!!!!! You are allowed for voting
+    </p> 
+   <ng-template #elsepart>
+        <p> 
+            Sorry!!!!! You are not allowed for voting
+        </p>
+        <p>
+            You must be atleast 18 to vote
+        </p>
+   </ng-template>
+</div>

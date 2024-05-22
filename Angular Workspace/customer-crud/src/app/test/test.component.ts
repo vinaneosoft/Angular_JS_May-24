@@ -42,4 +42,5 @@ export class TestComponent {
    console.log(this.checkBox);
    
   }
+  voterAge=0;
 }
